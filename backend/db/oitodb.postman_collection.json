@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "3a4b22df-4253-4ae5-9dae-71fd1bc6494a",
+		"name": "oitodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19913977",
+		"_collection_link": "https://crimson-meadow-953198.postman.co/workspace/Rishi-Sharma~8c89c8c1-e0c5-4283-a332-45e5a5fcbaf8/collection/19913977-3a4b22df-4253-4ae5-9dae-71fd1bc6494a?action=share&creator=19913977&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "oito requests",
+			"item": [
+				{
+					"name": "localhost:8082/api/v1/longest-duration-movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/api/v1/longest-duration-movies",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"longest-duration-movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8082/api/v1/new-movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titleType\":\"titleType\",\r\n    \"primaryTitle\":\"primaryTitle\",\r\n    \"runtimeMinutes\":\"525\",\r\n    \"genres\":\"genres\",\r\n    \"averageRating\":5.7,\r\n    \"numVotes\":1268\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/api/v1/new-movie",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"new-movie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8082/api/v1/top-rated-movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/api/v1/top-rated-movies",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"top-rated-movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8082/api/v1/genre-movies-with-subtotals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/api/v1/genre-movies-with-subtotals",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"genre-movies-with-subtotals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8082/api/v1/update-runtime-minutes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"genres\":\"Action\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/api/v1/update-runtime-minutes",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"v1",
+								"update-runtime-minutes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
